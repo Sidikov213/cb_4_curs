@@ -1,0 +1,121 @@
+i've put two payload examples for code type with format 3.2, can you please try to change the logic of the code answer, because currently it doesnt register, as if it was never answered, but the payload works and returns the expected response. 
+
+
+
+
+curl ^"https://kb.cifrium.ru/api/lessons/11861/tasks/1167882/answer_attempts^" ^
+  -H ^"Accept: application/json, text/plain, */*^" ^
+  -H ^"Accept-Language: en-US,en;q=0.9^" ^
+  -H ^"Connection: keep-alive^" ^
+  -H ^"Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryPlF2N9oWcBp3m2jJ^" ^
+  -b ^"user_agent_uid=96b7c5a9-8b3c-4104-8eb9-ece55ca0cb4d; _ym_uid=177350757061154639; _ym_d=1773507570; mindboxDeviceUUID=0433c197-dab3-429c-b12c-38784b939289; directCrm-session=^%^7B^%^22deviceGuid^%^22^%^3A^%^220433c197-dab3-429c-b12c-38784b939289^%^22^%^7D; _ym_isad=2; client_timezone=Europe/Moscow; remember_user_token=eyJfcmFpbHMiOnsibWVzc2FnZSI6IlcxczNOakV3TVRWZExDSWtNbUVrTVRBa01HMDNkRVp6V0d4bkxsbFJNMXBJWVZaWExtMVFUeUlzSWpFM056TTFNRGMyTVRndU5qWXdOekl6SWwwPSIsImV4cCI6IjIwMjYtMDYtMTRUMTc6MDA6MThaIiwicHVyIjpudWxsfX0^%^3D--d95be89325a6453a50c03eec66c072a4843b3656; _wk_kbc_session=d9d04c1ed4098e488681ad4d5f1bfa11; _csrf_token=8QjFYZ^%^2BPiD^%^2BVsY1m15xbmtczEUyMpt1QuZEs^%^2FOoOX6VvhJ3lEF1kifyLbZFBpWmP9dseJCrz8KRCdJcrJqkVog^%^3D^%^3D^" ^
+  -H ^"Origin: https://kb.cifrium.ru^" ^
+  -H ^"Referer: https://kb.cifrium.ru/lessons/11861/tasks/1167882^" ^
+  -H ^"Sec-Fetch-Dest: empty^" ^
+  -H ^"Sec-Fetch-Mode: cors^" ^
+  -H ^"Sec-Fetch-Site: same-origin^" ^
+  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36^" ^
+  -H ^"X-CSRF-Token: 8QjFYZ+PiD+VsY1m15xbmtczEUyMpt1QuZEs/OoOX6VvhJ3lEF1kifyLbZFBpWmP9dseJCrz8KRCdJcrJqkVog==^" ^
+  -H ^"X-Device-Id: 32c8ed65e482cef9f4f92ca88e4a188c^" ^
+  -H ^"X-Referer: https://kb.cifrium.ru/lessons/11861/tasks/1167882^" ^
+  -H ^"X-Requested-With: XMLHttpRequest^" ^
+  -H ^"X-Skip-Error-Notification: true^" ^
+  -H ^"sec-ch-ua: ^\^"Not:A-Brand^\^";v=^\^"99^\^", ^\^"Google Chrome^\^";v=^\^"145^\^", ^\^"Chromium^\^";v=^\^"145^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  --data-raw ^"------WebKitFormBoundaryPlF2N9oWcBp3m2jJ^
+
+Content-Disposition: form-data; name=^\^"questions^[1207769^]^[^]^[language^]^\^"^
+
+^
+
+python3^
+
+------WebKitFormBoundaryPlF2N9oWcBp3m2jJ^
+
+Content-Disposition: form-data; name=^\^"questions^[1207769^]^[^]^[source_code^]^\^"^
+
+^
+
+L = ^[12, 45, 67, 23, 89, 56, 34, 78, 90, 9, 11, 88, 37, 72, 5, 61, 18, 83, 29, 94, 40, 77, 6, 50, 14, 98, 27, 71, 35, 21, 68, 44, 82, 10, 53, 75, 91, 3, 17, 46, 63, 80, 22, 55, 96, 7, 31, 58, 84^]^
+
+^
+
+def sum(list):^
+
+  sm = 0^
+
+  for i in list:^
+
+    sm+=i^
+
+  return sm^
+
+^
+
+print(sum(L))^
+
+------WebKitFormBoundaryPlF2N9oWcBp3m2jJ^
+
+Content-Disposition: form-data; name=^\^"questions^[1207769^]^[^]^[test_case_execution_id^]^\^"^
+
+^
+
+1674405^
+
+------WebKitFormBoundaryPlF2N9oWcBp3m2jJ--^
+
+^"
+
+
+
+
+
+
+
+
+curl ^"https://kb.cifrium.ru/api/lessons/11860/tasks/1167874/answer_attempts^" ^
+  -H ^"Accept: application/json, text/plain, */*^" ^
+  -H ^"Accept-Language: en-US,en;q=0.9^" ^
+  -H ^"Connection: keep-alive^" ^
+  -H ^"Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryCrRhfI9SDysxgt5U^" ^
+  -b ^"user_agent_uid=ff128d42-d694-49f4-93db-2e7cf1a360e4; _ym_uid=177351676744437328; _ym_d=1773516767; mindboxDeviceUUID=ff6d2957-2549-40b3-8fdd-04d604b70caf; directCrm-session=^%^7B^%^22deviceGuid^%^22^%^3A^%^22ff6d2957-2549-40b3-8fdd-04d604b70caf^%^22^%^7D; _ym_isad=2; client_timezone=Europe/Moscow; _csrf_token=O7478fnr15Z^%^2F7rsGjqkHzVDYsnNJoEX0JecjInrNIFZV0iUE1PyOGpwkNkBr27rTWUg5Ze1N9HM7vQ0U8g6Waw^%^3D^%^3D; remember_user_token=eyJfcmFpbHMiOnsibWVzc2FnZSI6IlcxczNOakV3TWpkZExDSWtNbUVrTVRBa01scDZUVzl1VmxkWFRDNU5NMjFLWTI0MVVtNXFkU0lzSWpFM056TTFNVGN4TXpRdU5qYzFORFF4TlNKZCIsImV4cCI6IjIwMjYtMDYtMTRUMTk6Mzg6NTRaIiwicHVyIjpudWxsfX0^%^3D--aee4d7616c4376491132fc7d43f0020f1934aaf5; _wk_kbc_session=59ae1dbf6bbb0b2a96c841bdfde3f2fc^" ^
+  -H ^"Origin: https://kb.cifrium.ru^" ^
+  -H ^"Referer: https://kb.cifrium.ru/teacher/lessons/11860/tasks/1167874^" ^
+  -H ^"Sec-Fetch-Dest: empty^" ^
+  -H ^"Sec-Fetch-Mode: cors^" ^
+  -H ^"Sec-Fetch-Site: same-origin^" ^
+  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36^" ^
+  -H ^"X-CSRF-Token: O7478fnr15Z/7rsGjqkHzVDYsnNJoEX0JecjInrNIFZV0iUE1PyOGpwkNkBr27rTWUg5Ze1N9HM7vQ0U8g6Waw==^" ^
+  -H ^"X-Device-Id: 32c8ed65e482cef9f4f92ca88e4a188c^" ^
+  -H ^"X-Referer: https://kb.cifrium.ru/teacher/lessons/11860/tasks/1167874^" ^
+  -H ^"X-Requested-With: XMLHttpRequest^" ^
+  -H ^"X-Skip-Error-Notification: true^" ^
+  -H ^"sec-ch-ua: ^\^"Not:A-Brand^\^";v=^\^"99^\^", ^\^"Google Chrome^\^";v=^\^"145^\^", ^\^"Chromium^\^";v=^\^"145^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  --data-raw ^"------WebKitFormBoundaryCrRhfI9SDysxgt5U^
+
+Content-Disposition: form-data; name=^\^"questions^[1207761^]^[^]^[language^]^\^"^
+
+^
+
+python3^
+
+------WebKitFormBoundaryCrRhfI9SDysxgt5U^
+
+Content-Disposition: form-data; name=^\^"questions^[1207761^]^[^]^[source_code^]^\^"^
+
+^
+
+m = int(input())^
+
+cm = int(input())^
+
+^
+
+print(m * 1000 + cm * 10)^
+
+------WebKitFormBoundaryCrRhfI9SDysxgt5U--^
+
+^"
